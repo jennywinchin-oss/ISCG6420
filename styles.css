@@ -1,8 +1,160 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+    
+html,body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000000;
+}
+
 body {
-    background-color: antiquewhite;
-    color: aliceblue;
+    float: left;
 }
 
 h1{
-    font-size: 64px;
+    font-size: 36px;
 }
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h1,h2,h3 {
+    font-family: 'Segoe UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 4000;
+    margin: 10px;
+}
+
+.content {
+    float: left;
+    width: 66.6666%;
+}
+
+.sidebar {
+    float: left;
+    width: 33.3333%;
+}
+
+.image-large {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 100%;
+    animation: up-down;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes up-down {
+    0%{
+        transform: translateY(-125px);
+    }
+    100%{
+        transform: translateY(-650px);
+    }
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+
+thead{
+    color: #fff;
+    background-color: #2c4b92;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    padding: 8px 8px 8px 16px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+
+th.third {
+    width: 33.3333%;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+header {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color:aliceblue;
+    background-color: #000000;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity:0;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: 550;
+    color:aliceblue;
+    animation: white-to-grey, opacity-up, size-up;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards
+}
+
+@keyframes white-to-grey{
+    from{
+        color: aliceblue;
+    }
+    to {
+        color: #808080;
+    }
+}
+
+@keyframes opacity-up {
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes size-up {
+    from{
+        font-size: 15px;
+    }
+    to{
+        font-size: 30px;
+    }
+}
+
+
