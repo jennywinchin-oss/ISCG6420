@@ -32,9 +32,10 @@
               "RelativeDocumentMoniker": "styles.css",
               "ToolTip": "C:\\Users\\user\\Documents\\2026 S1\\Internet and Website Development\\GitHub\\ISCG6420\\styles.css",
               "RelativeToolTip": "styles.css",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAADsAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAABQkaEjwHgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-04-01T05:36:04.944Z"
+              "WhenOpened": "2026-04-01T05:36:04.944Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,14 +45,10 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\user\\Documents\\2026 S1\\Internet and Website Development\\GitHub\\ISCG6420\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-04-01T05:35:40.576Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
