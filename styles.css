@@ -4,6 +4,21 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+header {
+    width:100vw;
+}
+
+#bannerLink {
+    width: 100vw;
+    
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+}
     
 html,body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -43,6 +58,7 @@ h1,h2,h3 {
 .sidebar {
     float: left;
     width: 33.3333%;
+    overflow:hidden;
 }
 
 .image-large {
@@ -166,8 +182,8 @@ header {
     font-family: Verdana;
     font-size: 15px;
     font-weight: 550;
-    color: #3b6953;
-    animation: green-to-grey, opacity-up, size-up;
+    color: aliceblue;
+    animation: white-to-grey, opacity-up, size-up;
     animation-duration: 3s;
     animation-delay: 3s;
     animation-timing-function: linear;
@@ -183,14 +199,14 @@ header {
     to {
         color: #3b6953;
     }
-}
+} 
 
-@keyframes green-to-grey{
+@keyframes white-to-grey{
     from{
-        color: #3b6953;
+        color: aliceblue;
     }
     to{
-        color: #696969;
+        color: #767676;
     }
 }
 @keyframes opacity-up {

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <a href="https://jschollitt.github.io/tetoifestival/" target="_blank">
+    <a id="bannerLink"href="https://jschollitt.github.io/tetoifestival/" target="_blank">
         <header>
             <div class="image-zoom">
                 <img class="image-large" src="./assets/haka.jpg" alt="Live Kapa Haka Performance" />
@@ -22,65 +22,40 @@
             <div class="bottom-right"> Jennifer Chin ID:1575372</div>
         </header>
     </a>
-    <div class="content">
-        <h2>Web Development</h2>
-        <p>
-             Web development is the act of creating and manipulating websites 
-             and other web-based tools. It involves the use of many technologies 
-             to build and deliver web pages and applications to users. The scope 
-             of use is wide, allowing for a highly flexible, dynamic space for 
-             innovation and long term sustainability.
-        </p>
-
-            <h2>Web Technologies</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th class="third">Technology</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Hyper Text Markup Language - used to structure the content of a web page</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Cascading Style Sheets - used to style a page without changing the HTML structure. 
-                        Cascading means that styles can be applied multiple times. Order matters - the last 
-                        change will be displayed.</td>
-                    </tr>
-                    <tr>
-                        <td>JS</td>
-                        <td>JavaScript</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2>Development Tools</h2>
-            <!-- Table without section elements (thead, tbody, tfoot)-->
-            <table>
-                <tr>
-                    <th>Technology</th>
-                    <th>Description</th>
-                </tr>
-
-                <!-- rows with cells inline instead of separate, indented lines -->
-                <tr><td>IDE</td><td>Integrated Development Environment - A tool for development. VSCode is an IDE.</td><tr>
-                <tr><td>Git</td><td>A SCM (Software Configuration Management) tool for managing project files across multiple users, locations, versions and states.</td></tr>
-                <tr><td>Web Browser</td><td>An application use to view web pages, often with a search function</td></tr>
-            </table>
-    </div>
     <div class="sidebar">
-        <h1>ISCG6420</h1>
-        <h3>Internet & Website Development</h3>
-        <p>
-            IWD is a Level 6, second year course in the bachelor of Computing Systems
-            programme. Students will learn to develop sophisticated enterprise websites
-            using core web technologies. This includes HTML, CSS, JS, jQuery, AJAX, XML,
-            and JSON.    
-        </p>
+        <div id="scene1" class="scene" style="visibility:visible;">
+            <img id="image1" src="./assets/pool.avif" />
+            <div id="text1">Asia flights from $599 economy one way</div>
+        </div>
+        <div id="scene2" class="scene" style="visibility:hidden;">
+            <img id="image2" src="./assets/city.avif" />
+            <div id="text2">Canada flights from $865 economy one way</div>
+        </div>
     </div>
+    <script>
+        const scenes = [];
+
+        function switchScene(sceneNumber) {
+            console.log("switch");
+            for (let i = 0; i < scenes.length; i++) {
+                scenes[i].style.visibility = (i === sceneNumber) ? "visible" : "hidden";
+            }
+        }
+
+        function runSidebar() {
+            let sceneNumber = 0
+            showScene(sceneNumber)
+            let timer = setInterval(() => {
+                switchSceene(sceneNumber);
+            }, 3000);
+            sceneNumber++
+            if (sceneNumber >= scenes.length) {
+                clearInterval(timer);
+                sceneNumber = 0;
+                return;
+            }
+        }
+    </script>
 </body>
 
 </html>
